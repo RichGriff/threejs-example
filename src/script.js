@@ -37,7 +37,7 @@ const plane = new THREE.Mesh(geometry, material)
 
 scene.add(plane)
 
-plane.rotation.x = 194
+plane.rotation.x = 156
 
 gui.add(plane.rotation, 'x').min(0).max(500)
 gui.add(plane.rotation, 'y').min(0).max(500)
@@ -129,7 +129,7 @@ const tick = () =>
     // Update objects
     //sphere.rotation.y = .5 * elapsedTime
     plane.rotation.z = .4 * elapsedTime
-    plane.material.displacementScale = .3 + mouseY * 0.0008
+    plane.material.displacementScale = .4 + mouseY * 0.0008
 
     // Update Orbital Controls
     // controls.update()
